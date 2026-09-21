@@ -10,7 +10,7 @@ COPY . .
 
 RUN mvn clean package -DskipTests
 
-FROM tomcat:7.0.109-jre8
+FROM tomcat:7.0.109-jre8-openjdk
 
 RUN rm -rf /usr/local/tomcat/webapps/ROOT \
     && rm -rf /usr/local/tomcat/webapps/ROOT.war
